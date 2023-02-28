@@ -3,7 +3,7 @@ body{
 }
 
 section{
-    background-image: url(./images/pexels-background.jpg);
+    background-image: url(./images/smallscreen.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -12,7 +12,12 @@ section{
     border: solid black 1px;
     color: white;
 }
+@media only screen and (max-width: 1000px) {
+    section{
+        background-color: rgba(85, 107, 47, 0.907);
+    }
 
+}
 .intro-area{
     display: flex;
     /* below is for the icons to fit right on the screen */
@@ -57,7 +62,7 @@ li{
    width: 100px; 
    height: 35px;
    border-radius: 30px;
-   background-color: lightblue;
+   background-color: rgb(125, 177, 194);
    text-align: center;
    padding-top: 5px;
 }
@@ -192,8 +197,9 @@ a{
 
     }
     ul{
+        width: 96%;
         display: none;
-        background-color: rgb(252, 217, 223);
+        background-color: rgba(60, 112, 74, 0.709);
         margin: 0px;
     }
     ul.show{
@@ -203,13 +209,9 @@ a{
         display: flex;
         flex-direction: column-reverse;
     }
-    .logo{
-        display: none;
-    }
 
 }
 .contactMe{
-    background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,8 +229,7 @@ input, textarea{
     padding: 10px;
     outline: 0;
     border: 1px solid #fff;
-    color: white;
-    opacity: .5;
+    color: rgba(255, 255, 255, 0.595);
     font-size: 15px;
 }
 
@@ -241,7 +242,7 @@ input, textarea{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: rgb(36, 128, 22);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -250,4 +251,17 @@ input, textarea{
   
   #myBtn:hover {
     background-color: #555;
+  }
+
+  .contact-me-title{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+
+  }
+  .contact-me-direction{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+
   }
