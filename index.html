@@ -3,27 +3,31 @@
 <head>
     <link rel="stylesheet" href="src/style.css"/>   
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/014fa73027.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samantha's Portfolio</title>
 </head>
 <body>
     
-    <section class="intro">
+    <section class="intro" id="#intro">
         <nav>
             <img class='logo' src="/src/images/heart-logo.png" />
-            <ul>
-                <li>Home</li>
-                <li>About Me</li>
+            <ul id="nav-list">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
                 <li>Contact Me</li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
         <div class="intro-area">
             <div class="intro-text">
                 <h1 class="name">Samantha Delacruz</h1>
                 <p>Full Stack Developer</p>
-                <div class="button">About Me</div>
+                <div class="button"><a href="#about-me">About Me</a></div>
             </div>
             <div class="socials">
                 <a href="https://github.com/sdmantha" class="Github">
@@ -40,7 +44,7 @@
         </div>
     </section>
         
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2 class="about-me-title">About me</h2>
             <p>I am a software engineer with years of experience working in the medical field.I had to be focused, think analytically with logic, and communicate clearly with everyone around. Developing the skill to navigate conversations and break down key concepts has helped me to succeed in my work, and has helped me to continue learning!</p>
@@ -51,38 +55,39 @@
     </section>
 
 
-    <section class="sub-sections-alternative">
+    <section class="sub-sections-alternative" id="projects">
         <h2 class="project-title">Projects</h2>
             <div class="project-container">
                 <div class="project-card">
-                    <img class="project-image" src="" alt="project-1"/>
+                    <img class="project-image" src="./src/images/rick-morty.png" alt="project-1"/>
                     <h3>Rick and Morty</h3>
                     <p class="sub-text">This was a project that grabbed infromation from an API</p>
                     <hr/>
-                    <p class="sub-text">View</p>
+                    <p class="sub-text"><a class="project-link" href="https://jolly-halva-5db9e3.netlify.app/">
+                        View
+                    </a></p>
                 </div>
                 <div class="project-card">
-                    <img class="project-image" src="" alt="project-2"/>
+                    <img class="project-image" src="./src/images/memory-card-game.png" alt="project-2"/>
                     <h3>Memory card game</h3>
-                    <p class="sub-text">This was a project that allows a person to have twenty tries to match all the cards on the board</p>
+                    <p class="sub-text">This was a project that allows a person to have twelve tries to match all the cards on the board</p>
                     <hr/>
-                    <p class="sub-text">View</p>
+                    <p class="sub-text"><a class="project-link" href="https://sdmantha.github.io/memory-card-game/">
+                        View
+                    </a></p>
                 </div>
                 <div class="project-card">
-                    <img class="project-image" src="" alt="project-3"/>
-                    <h3>Nutri=;og</h3>
+                    <img class="project-image" src="./src/images/Home.png" alt="project-3"/>
+                    <h3>Nutri-log</h3>
                     <p class="sub-text">This was a project which I worked with four other people to create a website that has full CRUD functionality</p>
                     <hr/>
-                    <p class="sub-text">View</p>
+                    <p class="sub-text"><a class="project-link" href="https://nutrilogx.netlify.app/">
+                        View
+                    </a></p>
                 </div>
                 
 
             </div>
-        
-
-
-
-
 
     </section>
 
@@ -90,7 +95,20 @@
 
 
     <section class="expirience"></section>
-    <section class="contactMe"></section>
+
+
+
+    <section class="contactMe" id="contact-me">
+
+        <h2> </h2>
+
+    </section>
+
+
+
+
+
+
     <script src="src/app.js"></script>
 </body>
 </html>
