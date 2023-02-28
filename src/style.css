@@ -50,9 +50,9 @@ li{
     width: 200px;
     text-decoration: none;
 }
-.name{
+/* .name{
 
-}
+} */
 
 .button{
    width: 100px; 
@@ -186,16 +186,25 @@ a{
     }
 
 }
-/* .knowledge{
-
-}
-.projects{
-
-}
-.expirience{
-
-} */
 .contactMe{
     background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: white;
+    background: transparent;
+    font-size: 15px;
+}
