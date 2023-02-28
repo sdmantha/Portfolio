@@ -3,18 +3,20 @@ body{
 }
 
 section{
-    
-    background-color: pink;
+    background-image: url(./images/pexels-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100%;
     border: solid black 1px;
-}
-.intro{
-    /* height: 100vh ; */
     color: white;
 }
+
 .intro-area{
     display: flex;
     /* below is for the icons to fit right on the screen */
-    height: 100%;
+    height: 80%;
     justify-content: space-between;
     align-items: center;
 }
@@ -35,24 +37,21 @@ nav{
     display: flex;
     /* leave a space between everything */
     justify-content: space-between;
+
 }
 ul{
     display: flex;
-    /* gets ride of the dots */
-    list-style-type: none
-    ;
+    /* gets rid of the dots */
+    list-style-type: none;
     width: 500px;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 li{
     width: 200px;
     text-decoration: none;
 }
-/* .name{
-
-} */
 
 .button{
    width: 100px; 
@@ -69,14 +68,12 @@ li{
     background-color: rgb(92, 92, 197);
     color: aliceblue;
 }
+
 .socials{
     padding-bottom: 250px;
 }
-.logo{
-    height: 80px;
-    margin: 30px;
-    border-radius: 25px;
-}
+
+
 .resume{
     margin: 20px;
 }
@@ -99,6 +96,7 @@ li{
     text-align: center;
     padding: 80px
 }
+
 h2{
     font-size: 60px;
 }
@@ -106,24 +104,44 @@ h2{
 .headshot{
     width: 300px;
     border-radius: 10px 20px 20px 50px;
+    margin: 15px;
 }
 .headshot-container{
     display: flex;
     align-items: center;
 }
+@media only screen and (max-width: 1000px) {
+    .headshot{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* title of the project */
+h3{
+    margin: 10px;
+}
+.project-title{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    
+}
 .project-card{
     width: 300px;
     height: 390px;
-    box-shadow: 5px 5px 20px rgb(197, 12, 43);
+    box-shadow: 10px 5px 20px rgb(190, 221, 194);
     margin: 10px;
+    background-color: rgba(57, 99, 31, 0.699);
 }
-
 .project-container{
     display: flex;
     justify-content: space-around;
     
-
+    
 }
+
 @media only screen and (max-width: 1000px) {
     .project-container{
         display: flex;
@@ -205,11 +223,31 @@ form{
     position: relative;
 }
 input, textarea{
-    width: 100%;
+    width: 80%;
     padding: 10px;
     outline: 0;
     border: 1px solid #fff;
     color: white;
-    background: transparent;
+    opacity: .5;
     font-size: 15px;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
