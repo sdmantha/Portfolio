@@ -113,7 +113,7 @@ h2{
 }
 .project-card{
     width: 300px;
-    height: 500px;
+    height: 390px;
     box-shadow: 5px 5px 20px rgb(197, 12, 43);
     margin: 10px;
 }
@@ -121,6 +121,7 @@ h2{
 .project-container{
     display: flex;
     justify-content: space-around;
+    
 
 }
 @media only screen and (max-width: 1000px) {
@@ -130,14 +131,17 @@ h2{
     }
 }
 
+/* for the project */
 .sub-text{
     font-size: 15px;
     font-weight: 300;
+    margin: 15px;
 }
 .project-image{
     width: 250px;
-    margin-top: 25px;
-    border-radius: 125px;
+    border-radius: px;
+    margin: 15px;
+    height: 150px;
 }
 hr{
     margin-left: 20px;
@@ -198,6 +202,7 @@ form{
 }
 .input-group{
     margin-bottom: 30px;
+    position: relative;
 }
 input, textarea{
     width: 100%;
